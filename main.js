@@ -48,3 +48,7 @@ canvas.addEventListener("touchstart", myTouchStart);
 
 
 canvas.addEventListener("touchmove", myTouchMove);
+
+document.getElementById("clear").addEventListener('touchstart', function () {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
